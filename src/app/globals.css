@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Great Vibes"),
+    url("./fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bellota Text";
+  font-style: normal;
+  font-weight: 400;
+  src: local("BellotaText-Bold"), local("BellotaText-Light"),
+    local("BellotaText-Regular"),
+    url("./fonts/BellotaText-Bold.ttf") format("truetype"),
+    url("./fonts/BellotaText-Light.ttf") format("truetype"),
+    url("./fonts/BellotaText-Regular.ttf"), format("truetype");
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #ccc !important;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Bellota Text", cursive;
+}
+
+.wrapper-layout {
+  max-width: 575px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.label-header {
+  height: 75.4px;
+  width: 100%;
+  background-color: #d6c3ca;
+  border-bottom: 1px solid #d6c3ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-header {
+  color: white;
+  font-size: 17.6px;
+  font-family: "Bellota Text", cursive;
+}
+
+.section-banner {
+  padding: 48px 24px;
+  background: #f6f1f3;
+}
+
+.wrapper-banner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+}
+
+.background-banner {
+  position: absolute;
+  top: -35px;
+  left: 10px;
+  z-index: 2;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-banner {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.date-banner {
+  font-size: 32px;
+  text-align: center;
+  margin: 35px 0 15px;
+  color: #a88290;
+  font-family: "Bellota Text", cursive;
+}
+
+.name-banner {
+  text-align: center;
+  padding: 8px 0 24px;
+  font-size: 40px;
+  color: #a88290;
+  font-family: "Bellota Text", cursive;
+}
+
+.desc-banner {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #a88290;
+  font-weight: 200;
+  font-family: "Bellota Text", cursive;
+}
+
+.section-albums {
+  padding: 48px 24px;
+  width: 100%;
+}
+
+.label-albums {
+  font-size: 40px;
+  color: #58595a;
+  font-family: "Great Vibes", cursive !important;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.wrapper-title-section {
+  padding: 48px 24px;
+  width: 100%;
+}
+
+.label-title-section {
+  font-size: 40px;
+  color: #58595a;
+  font-family: "Great Vibes", cursive !important;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.desc-title-section {
+  font-size: 18px;
+  color: #212529;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Bellota Text", cursive;
+}
+
+.desc-albums {
+  font-size: 18px;
+  color: #212529;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Bellota Text", cursive;
+}
+
+.footer-wrapper {
+  padding: 48px 0;
+  width: 100%;
+  background-color: #f6f1f3;
+}
+.thankyou-text {
+  font-size: 42px;
+  margin-bottom: 8xp;
+  color: #5b595a;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+  font-family: "Bellota Text", cursive;
+}
+.note-footer {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #212529;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+  font-family: "Bellota Text", cursive;
+}
