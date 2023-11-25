@@ -1,3 +1,4 @@
+
 import Albums from "./section-albums";
 import Banner from "./section-banner";
 import Calendar from "./section-calendar";
@@ -12,13 +13,11 @@ export default function Home() {
   return (
     <main className="">
       <Banner />
-      <Albums />
-      <Calendar />
-      <Counter />
       <Share />
-      <Information />
+      {/* <Information /> */}
       <Event />
       <HappyMoney />
+      <Albums />
     </main>
   )
 }

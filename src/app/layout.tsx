@@ -5,6 +5,7 @@ import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Header from "./header";
 import Footer from "./footer";
+import MusicBackground from "./music-background";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,11 +24,26 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Theme>
+          <div className="snowflakes" aria-hidden="true">
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+          </div>
           <div className="wrapper-layout">
             <Header />
             {children}
             <Footer />
           </div>
+          <MusicBackground />
         </Theme>
       </body>
     </html>

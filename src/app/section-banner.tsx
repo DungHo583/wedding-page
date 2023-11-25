@@ -5,14 +5,14 @@ import afterImageBanner from "./static/backgr-vonghoa.png"
 export default function Banner() {
   return (
     <section>
-      <div className="section-banner">
+      <div className="section-banner section-global">
         <div className="wrapper-banner">
           <div className="background-banner">
           <Image
               src={afterImageBanner}
               width={510.37}
               height={469.54}
-              alt="Picture of the author"
+              alt="flower"
             />
           </div>
           <div className="image-banner">
@@ -20,7 +20,7 @@ export default function Banner() {
               src={bannerImage}
               width={421.59}
               height={419.55}
-              alt="Picture of the author"
+              alt="Banner"
             />
           </div>
         </div>
