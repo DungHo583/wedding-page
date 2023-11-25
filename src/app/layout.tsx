@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
@@ -22,6 +23,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Xuân Dũng & Thuỳ Trang Wedding site</title>
+        <meta name="description" content="Xuân Dũng & Thuỳ Trang - Our wedding date: 2023-12-03 | Tình yêu đích thực và chân chính hiếm đến nỗi khi bạn bắt gặp nó dưới bất kỳ hình thức nào, đó là một điều tuyệt vời, được trân trọng hoàn toàn dưới bất kỳ hình thức nào" key="desc" />
+        <meta property="og:title" content="Xuân Dũng & Thuỳ Trang Wedding site" />
+        <meta
+          property="og:description"
+          content="Xuân Dũng & Thuỳ Trang - Our wedding date: 2023-12-03 | Tình yêu đích thực và chân chính hiếm đến nỗi khi bạn bắt gặp nó dưới bất kỳ hình thức nào, đó là một điều tuyệt vời, được trân trọng hoàn toàn dưới bất kỳ hình thức nào"
+        />
+        <meta
+          property="og:image"
+          content={require("./static/albums/album2.jpg")}
+        />
+      </Head>
       <body className={inter.className}>
         <Theme>
           <div className="snowflakes" aria-hidden="true">

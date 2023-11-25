@@ -27,7 +27,7 @@ export default function Banner() {
         <div className="date-banner">03.12</div>
         <div className="name-banner">Xuân Dũng &#9829; Thuỳ Trang</div>
         <div className="desc-banner">We are getting married!</div>
-        <div className="desc-banner">Ngày 03 tháng 12 năm 2024</div>
+        <div className="desc-banner">Ngày 03 tháng 12 năm 2023</div>
       </div>
     </section>
   );
