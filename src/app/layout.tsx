@@ -35,6 +35,7 @@ export default function RootLayout({
           property="og:image"
           content={require("./static/metadata.jpg")}
         />
+        <link rel="icon" href={require("./favicon.ico")} sizes="16*16" />
       </Head>
       <body className={inter.className}>
         <Theme>
