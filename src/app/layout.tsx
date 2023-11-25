@@ -33,7 +33,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content={require("./static/albums/album2.jpg")}
+          content={require("./static/metadata.jpg")}
         />
       </Head>
       <body className={inter.className}>
