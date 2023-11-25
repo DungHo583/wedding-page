@@ -20,7 +20,7 @@ export default function Event() {
         </div>
         <div className="wrapper-event-info">
           <div className="wrapper-card">
-            <Image src={tiecnhanu} width={193} height={165} alt="Events" />
+            <div className="wrapper-card-image event-girl"></div>
             <div className="wrapper-card-info">
               <div className="title-card">LỄ CƯỚI NHÀ NỮ</div>
               <div className="time-card">16:30 - 02/12/2023</div>
@@ -30,7 +30,7 @@ export default function Event() {
             </div>
           </div>
           <div className="wrapper-card">
-            <Image src={tiecnhanam} width={193} height={165} alt="Events" />
+            <div className="wrapper-card-image event-boy"></div>
             <div className="wrapper-card-info">
               <div className="title-card">LỄ CƯỚI NHÀ NAM</div>
               <div className="time-card">11:00 - 03/12/2023</div>

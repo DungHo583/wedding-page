@@ -206,8 +206,10 @@ body {
 
 .background-banner {
   position: absolute;
-  top: -35px;
-  left: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 2;
   border-radius: 50%;
   overflow: hidden;
@@ -215,8 +217,10 @@ body {
 
 .image-banner {
   position: absolute;
-  top: 10px;
-  left: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
   z-index: 1;
   border-radius: 50%;
   overflow: hidden;
@@ -416,4 +420,64 @@ body {
   width: 100%;
   font-weight: 200;
   font-family: "Bellota Text", cursive;
+}
+
+.sub-name-share-mobile {
+  display: none;
+}
+
+.wrapper-card-image {
+  width: 193px;
+  min-width: 30%;
+  height: 180px;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.event-girl {
+  background-image: url(./static/tieccuoinhanu.jpeg);
+}
+.event-boy {
+  background-image: url(./static/tieccuoinhanam.jpeg);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-banner {
+    height: 315px;
+  }
+  .name-banner {
+    font-size: 30px;
+  }
+  .desc-banner {
+    font-size: 20px;
+  }
+  .sub-name-share {
+    display: none;
+  }
+  .sub-name-share-mobile {
+    color: #a88290;
+    font-size: 32px;
+    font-family: "Bellota Text", cursive;
+    text-align: center;
+    margin-bottom: 48px;
+    padding-top: 30px;
+    display: block;
+  }
+  .sub-name-share-mobile > span {
+    font-size: 16px;
+  }
+
+  .wrapper-card {
+    display: grid;
+  }
+  .wrapper-card-image {
+    min-width: 100%;
+  }
+  .wrapper-card-account {
+    max-width: 80%;
+  }
+  .music-background-wrapper > audio {
+    height: 30px;
+  }
 }

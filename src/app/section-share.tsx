@@ -22,6 +22,9 @@ export default function Share() {
         <div className="sub-name-share">
           <span>chú rể</span> Xuân Dũng &#9829; Thuỳ Trang <span>cô dâu</span>
         </div>
+        <div className="sub-name-share-mobile">
+          <span>chú rể</span> Xuân Dũng <br /> &#9829; <br /> Thuỳ Trang <span>cô dâu</span>
+        </div>
         <Image
           src={album1}
           // width={510.37}
