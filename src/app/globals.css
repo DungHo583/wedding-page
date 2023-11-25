@@ -317,7 +317,10 @@ body {
 .music-background-wrapper {
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: 3px;
+}
+.music-background-wrapper > audio {
+  width: 220px;
 }
 
 .wrapper-card-account > .title-account {

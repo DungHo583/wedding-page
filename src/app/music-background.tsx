@@ -1,5 +1,5 @@
 "use client";
-import musicWedding from "./public/musics/music-wedding.mp3";
+// import musicWedding from ;
 import ReactAudioPlayer from "react-audio-player";
 import React from "react";
 
@@ -8,9 +8,10 @@ export default function MusicBackground() {
     <>
       <div className="music-background-wrapper">
         <ReactAudioPlayer
-          src={musicWedding}
+          src={require( "./public/musics/music-wedding.mp3")}
           autoPlay={true}
           loop={true}
+          volume={0.1}
           controls
         />
       </div>
