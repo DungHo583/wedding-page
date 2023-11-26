@@ -23,7 +23,7 @@ export default function Event() {
             <div className="wrapper-card-image event-girl"></div>
             <div className="wrapper-card-info">
               <div className="title-card">LỄ CƯỚI NHÀ NỮ</div>
-              <div className="time-card">16:30 - 02/12/2023</div>
+              <div className="time-card">16:00 - 02/12/2023</div>
               <div className="address-card">
                 Tư gia nhà nữ - Thôn 3, Sơn Bình, Hương Sơn, Hà Tĩnh
               </div>
