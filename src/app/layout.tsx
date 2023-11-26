@@ -1,3 +1,4 @@
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
@@ -22,7 +23,8 @@ export default function RootLayout({
           content="Xuân Dũng & Thuỳ Trang - Our wedding date: 2023-12-03 | Tình yêu đích thực và chân chính hiếm đến nỗi khi bạn bắt gặp nó dưới bất kỳ hình thức nào, đó là một điều tuyệt vời, được trân trọng hoàn toàn dưới bất kỳ hình thức nào"
         />
         <meta property="og:title" content="Xuân Dũng & Thuỳ Trang Wedding site"/>
-        <meta property="og:image" content={require("./static/metadata.jpg")}/>
+        <meta property="og:image" content="https://drive.google.com/file/d/1PS8a-iULaX8bwauNcrrXyw0QveAWNgJi/view?usp=sharing"/>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
       </head>
       <body className={inter.className}>
         <Theme>
