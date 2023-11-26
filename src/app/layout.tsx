@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
@@ -9,16 +8,6 @@ import MusicBackground from "./music-background";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Xuân Dũng & Thuỳ Trang Wedding site",
-  icons: require("./favicon.ico"),
-  openGraph: {
-    images: require("./static/metadata.jpg"),
-  },
-  description:
-    "Xuân Dũng & Thuỳ Trang - Our wedding date: 2023-12-03 | Tình yêu đích thực và chân chính hiếm đến nỗi khi bạn bắt gặp nó dưới bất kỳ hình thức nào, đó là một điều tuyệt vời, được trân trọng hoàn toàn dưới bất kỳ hình thức nào",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -26,6 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Xuân Dũng & Thuỳ Trang Wedding site</title>
+        <meta
+          name="description"
+          content="Xuân Dũng & Thuỳ Trang - Our wedding date: 2023-12-03 | Tình yêu đích thực và chân chính hiếm đến nỗi khi bạn bắt gặp nó dưới bất kỳ hình thức nào, đó là một điều tuyệt vời, được trân trọng hoàn toàn dưới bất kỳ hình thức nào"
+        />
+        <meta property="og:title" content="Xuân Dũng & Thuỳ Trang Wedding site"/>
+        <meta property="og:image" content={require("./static/metadata.jpg")}/>
+      </head>
       <body className={inter.className}>
         <Theme>
           <div className="snowflakes" aria-hidden="true">
