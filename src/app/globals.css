@@ -1,0 +1,483 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Great Vibes"),
+    url("./fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bellota Text";
+  font-style: normal;
+  font-weight: 400;
+  src: local("BellotaText-Bold"), local("BellotaText-Light"),
+    local("BellotaText-Regular"),
+    url("./fonts/BellotaText-Bold.ttf") format("truetype"),
+    url("./fonts/BellotaText-Light.ttf") format("truetype"),
+    url("./fonts/BellotaText-Regular.ttf"), format("truetype");
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+}
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes snowflakes-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+}
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #fff;
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+.snowflake:nth-of-type(10) {
+  left: 25%;
+  -webkit-animation-delay: 2s, 0s;
+  animation-delay: 2s, 0s;
+}
+.snowflake:nth-of-type(11) {
+  left: 65%;
+  -webkit-animation-delay: 4s, 2.5s;
+  animation-delay: 4s, 2.5s;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #ccc !important;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Bellota Text", cursive;
+}
+
+.wrapper-layout {
+  max-width: 575px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.label-header {
+  height: 75.4px;
+  width: 100%;
+  background-color: #d6c3ca;
+  border-bottom: 1px solid #d6c3ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-header {
+  color: white;
+  font-size: 17.6px;
+  font-family: "Bellota Text", cursive;
+}
+
+.section-banner {
+  padding: 48px 24px;
+  background: #f6f1f3;
+}
+
+.section-global {
+  padding: 48px 24px;
+  width: 100%;
+}
+
+.wrapper-banner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+}
+
+.background-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.date-banner {
+  font-size: 32px;
+  text-align: center;
+  margin: 35px 0 15px;
+  color: #a88290;
+  font-family: "Bellota Text", cursive;
+}
+
+.name-banner {
+  text-align: center;
+  padding: 8px 0 24px;
+  font-size: 40px;
+  color: #a88290;
+  font-family: "Bellota Text", cursive;
+}
+
+.desc-banner {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #a88290;
+  font-weight: 200;
+  font-family: "Bellota Text", cursive;
+}
+
+.section-albums {
+  padding: 48px 24px;
+  background: #f6f1f3;
+}
+
+.label-albums {
+  font-size: 40px;
+  color: #58595a;
+  font-family: "Great Vibes", cursive !important;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.wrapper-title-section {
+  padding: 48px 24px;
+  width: 100%;
+}
+
+.section-event {
+  background: #f6f1f3;
+}
+
+.wrapper-card {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  background-color: #ecd9d9;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.wrapper-card-info {
+  margin-left: 16px;
+  padding: 10px;
+}
+.wrapper-card-info > .title-card {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.wrapper-card-info > .time-card {
+  font-size: 16px;
+  font-family: "Bellota Text", cursive;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+.wrapper-card-info > .address.card {
+  font-size: 16px;
+  font-family: "Bellota Text", cursive;
+  font-weight: 100;
+}
+
+.wrapper-card-account {
+  max-width: 60%;
+  background-color: #ecd9d9;
+  padding: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.calendar-img {
+  margin: 0 auto 48px auto;
+}
+
+.music-background-wrapper {
+  position: fixed;
+  bottom: 10px;
+  right: 3px;
+}
+.music-background-wrapper > audio {
+  width: 220px;
+}
+
+.wrapper-card-account > .title-account {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.wrapper-card-account > img {
+  margin: 0 auto;
+  padding: 3px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.wrapper-card-account > .info-account {
+  font-size: 16px;
+  color: #212529;
+  padding: 10px 0;
+  text-align: center;
+  line-height: 35px;
+}
+
+.label-title-section {
+  font-size: 40px;
+  color: #58595a;
+  font-family: "Great Vibes", cursive !important;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.desc-title-section {
+  font-size: 18px;
+  color: #212529;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Bellota Text", cursive;
+}
+
+.desc-albums {
+  font-size: 18px;
+  color: #212529;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Bellota Text", cursive;
+}
+
+.section-share {
+  background: #fff;
+}
+
+.subtext-share {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Bellota Text", cursive;
+  margin: 48px 0;
+  color: #a88290;
+}
+
+.sub-name-share {
+  color: #a88290;
+  font-size: 32px;
+  font-family: "Bellota Text", cursive;
+  text-align: center;
+  margin-bottom: 48px;
+  padding-top: 30px;
+}
+
+.sub-name-share > span {
+  font-size: 16px;
+}
+
+.footer-wrapper {
+  padding: 48px 0;
+  width: 100%;
+  background-color: #f6f1f3;
+}
+.thankyou-text {
+  font-size: 42px;
+  margin-bottom: 8xp;
+  color: #5b595a;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+  font-family: "Bellota Text", cursive;
+}
+.note-footer {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #212529;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+  font-family: "Bellota Text", cursive;
+}
+
+.sub-name-share-mobile {
+  display: none;
+}
+
+.wrapper-card-image {
+  width: 193px;
+  min-width: 30%;
+  height: 180px;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.event-girl {
+  background-image: url(./static/tieccuoinhanu.jpeg);
+}
+.event-boy {
+  background-image: url(./static/tieccuoinhanam.jpeg);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-banner {
+    height: 315px;
+  }
+  .name-banner {
+    font-size: 30px;
+  }
+  .desc-banner {
+    font-size: 20px;
+  }
+  .sub-name-share {
+    display: none;
+  }
+  .sub-name-share-mobile {
+    color: #a88290;
+    font-size: 32px;
+    font-family: "Bellota Text", cursive;
+    text-align: center;
+    margin-bottom: 48px;
+    padding-top: 30px;
+    display: block;
+  }
+  .sub-name-share-mobile > span {
+    font-size: 16px;
+  }
+
+  .wrapper-card {
+    display: grid;
+  }
+  .wrapper-card-image {
+    min-width: 100%;
+  }
+  .wrapper-card-account {
+    max-width: 80%;
+  }
+  .music-background-wrapper > audio {
+    height: 30px;
+  }
+}
